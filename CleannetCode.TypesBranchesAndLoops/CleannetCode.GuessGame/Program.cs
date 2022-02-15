@@ -12,11 +12,10 @@ Console.Write("Введите число и нажмите Enter: ");
 
 int attemptCount = 0;
 bool hiddenNumberGuessed = false;
-string? userInput;
 while (!hiddenNumberGuessed)
 {
-    userInput = Console.ReadLine();
-    int attempt = 0;
+    string? userInput = Console.ReadLine();
+    int attempt = -1;
     Console.WriteLine();
     if (int.TryParse(userInput, out attempt))
     {
